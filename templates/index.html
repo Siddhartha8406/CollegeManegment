@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="viewport", content="width=device-width, intial-scale=1.0">
+    </head>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-content {
+            background-image: url('images/pes-polytechnic-mian.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+        .login_form{
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            width: 90%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 200%;
+        }
+        form{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            padding: 10px;
+            background-color: aqua;
+        }
+        
+        input[type="text"]{
+            font-size: 100%;
+            padding: 5px 5px;
+            margin: 8px 0;
+        }
+    </style>
+    <body>
+        <section class="main-content">
+            <div class="login_form">
+                    <form>
+                        <h1>Login</h1>
+                        <input type="text", placeholder="Username"><br>
+                        <input type="text", placeholder="Password">
+                    </form>
+            </div>
+        </section>
+    </body>
+</html>
