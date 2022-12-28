@@ -17,26 +17,52 @@
             position: relative;
         }
         .login_form{
-            background-color: rgba(0, 0, 0, 0.2);
             position: absolute;
             width: 90%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 200%;
+            font-size: 180%;
         }
         form{
             position: absolute;
             transform: translate(-50%, -50%);
             left: 50%;
-            padding: 10px;
-            background-color: aqua;
+            padding: 15px;
+            background: rgba(80, 99, 124, 0.3);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
         }
         
+        .login_form  h1{
+            text-align: center;
+            font-size: 180%;
+            font-style: sans-serif;
+        }
+
         input[type="text"]{
             font-size: 100%;
             padding: 5px 5px;
             margin: 8px 0;
+        }
+
+        form a{
+            font-size: 80%;
+
+        }
+        input[type="submit"]{
+            font-size: 80%;
+            width: 100%;
+            padding: 5px 5px;
+            margin: 8px 0;
+            background: rgb(43, 68, 114);
+            border: 1px solid ;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background: rgb(188, 194, 205);
         }
     </style>
     <body>
@@ -45,7 +71,9 @@
                     <form>
                         <h1>Login</h1>
                         <input type="text", placeholder="Username"><br>
-                        <input type="text", placeholder="Password">
+                        <input type="text", placeholder="Password"><br>
+                        <a href="">Forgot Password</a><br>
+                        <input type="submit", value="Login">
                     </form>
             </div>
         </section>
