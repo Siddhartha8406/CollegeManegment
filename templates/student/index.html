@@ -23,11 +23,12 @@
           .sidenav a{
             padding: 15px 0px 15px 0px;
             display: block;
-            font-size: 300%;
+            font-size: 250%;
             width: 100%;
             color: #555757;
             transition: 0.3s;
             text-decoration: none;
+            margin-left: 7px;
           }
 
           .sideNav a:hover{
@@ -36,8 +37,22 @@
 
           #closeSidenav{
             position: relative;
-            left: 85%;
+            left: 80%;
             padding:0;
+            
+          }
+
+          #sidenav_menu{
+            position: fixed;
+            left: 10;
+            top: 10;
+            width: 3%;
+            padding: 5px;
+            border-radius: 10%;
+          }
+
+          #sidenav_menu:hover{
+            background-color: #00000023;
           }
 
           #main_content{
@@ -52,17 +67,23 @@
             height: 40px;
           }
 
-          .avatar {
+          #avatar {
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            margin-top: 50px;
             margin: auto;
             padding-top: 15px;
           }
 
+          .avatar_div h2{
+            text-size-adjust: 200%;
+          }
+
           @media screen and (max-height: 850px) {
-            .sidenav a {font-size: 200%;}
+            .sidenav a {font-size: 220%;}
+            #closeSidenav{font-size: 300%;}
+            #sidenav_menu{width: 7%;}
+            #sidenav_menu:hover{background-color: rgba(0, 0, 0, 0);}
           }
         </style>
         <script>
@@ -86,15 +107,17 @@
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="hideNav()" id="closeSidenav">&times;</a>
           <a href="#" id="aSidenav">Homeworks</a>
-          <a href="#" class="aSidenav">Contact Teacher</a>
+          <a href="contact_teacher.html" class="aSidenav">Contact Teacher</a>
           <a href="#" class="aSidenav">Feedback</a>
           <a href="#" class="aSidenav">Holidays</a>
         </div>
 
         <div class="main" id="main_content">
-          <button onclick="showNav()">This is testbutton</button><br>
+          <img src="icons/menu.png" onclick="showNav()" id="sidenav_menu"><br>
+
           <div id="avatar_div">
-          <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+          <img src="images/avatar.jpg" alt="Avatar" id="avatar">
+          <h2>Student name</h2>
         </div>
     </body>
 </html>
